@@ -106,6 +106,7 @@ export default function Chat() {
             </MessageList>
             <MessageInput
               attachButton={false}
+              sendButton={true}
               placeholder="What would you like to know?"
               onSend={onSend}
               sendDisabled={waitingForResponse}
