@@ -104,7 +104,13 @@ export default function Chat() {
                   </Message>
               ))}
             </MessageList>
-            <MessageInput placeholder="What would you like to know?"  onSend={onSend} sendDisabled={waitingForResponse} />        
+            <MessageInput
+              attachButton={false}
+              placeholder="What would you like to know?"
+              onSend={onSend}
+              sendDisabled={waitingForResponse}
+              sendOnReturnDisabled={waitingForResponse}
+            />
           </ChatContainer>
         </MainContainer>
       </div>
